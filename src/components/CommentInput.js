@@ -15,6 +15,7 @@ class CommentInput extends Component {
     this.setState({content: event.target.value})
   }
   handleSubmit() {
+    // prop 此处使用传递函数
     if (this.props.onSubmit) {
       this.props.onSubmit({
         username: this.state.username,

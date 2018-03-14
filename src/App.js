@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import CommentInput from './components/CommentInput'
 import CommentList from './components/CommentList'
-
+import TodoApp from './components/TodoApp'
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      comments: []
+      comments: []                                                                                                                                                                                                                                                                                                                                                                                          
     }
   }
   handleSubmitComment (comment) {
@@ -26,6 +26,7 @@ class App extends Component {
           .handleSubmitComment
           .bind(this)}/>
         <CommentList comments={this.state.comments}/>
+        <TodoApp/>
       </div>
     )
   }
